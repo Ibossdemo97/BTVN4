@@ -1,0 +1,116 @@
+
+// Bài 1: Tìm nghiệm của phương trình bậc 2
+
+import Swift
+import Foundation
+
+// Tìm Nghiệm của phương trình bậc 2
+print("Nhập a: ")
+var a = Double(readLine()!)!
+
+print("Nhập b: ")
+var b = Double(readLine()!)!
+
+print("Nhập c: ")
+var c = Double(readLine()!)!
+
+var delta = ((b * b) - (4 * a * c))
+delta = ((b * b) - (4 * a * c))
+var x1: Double = -b + (sqrt(delta/2 * a))
+var x2: Double = -b - (sqrt(delta/2 * a))
+var x: Double = -b / (2 * a)
+var đb: Double = c / a
+if a + b + c == 0 {
+    print("Phương trình có 2 nghiệm: ")
+    print("x1 = 1")
+    print("x2 = \(đb)")
+} else {
+    if a - b + c == 0 {
+        print("Phương trình có 2 nghiệm: ")
+        print("x1 = -1")
+        print("x2 = -\(đb)")
+    } else {
+        if delta < 0 {
+            print("\(delta) < 0, Phương trình vô nghiệm")
+        } else {
+            if delta == 0 {
+                print("Phương trình có 1 nghiệm duy nhất: x1 = x2 = \(x) ")
+            } else {
+                if delta > 0 {
+                    print("Phương trình có 2 nghiệm: ")
+                    print("x1 = \(x1)")
+                    print("x1 = \(x2)")
+                }
+            }
+        }
+    }
+}
+
+// Bài 2: Tìm số chắn lẻ
+
+var arrInts = [Int]()
+print("Nhập số lượng phần tử: ")
+var N = Int(readLine()!)!
+if N <= 0 {
+    print("Vui lòng nhập số lớn hơn 0")
+} else {
+    
+    }
+  
+
+
+
+
+
+// Bài 3: In ra họ và tên
+print("Tên bạn là gì?")
+let name = readLine()
+print("Tên bạn là: \(name))")
+
+// Bài 4: Tính giai thừa
+
+print("Nhập giai thừa cần tính: ")
+var n = Int(readLine()!)!
+var giaithua = 1
+var i = 1
+if n == 0 || n == 1 {
+    print("\(n)! = 1")
+} else {
+    if n < 0 {
+        print("Không có giai thừa của số âm")
+    } else {
+        while i <= n {
+            giaithua = giaithua*i
+            print("kết quả của \(n)! là: \(giaithua)")
+        }
+    }
+}
+// Bài 5: Sắp xếp dãy số cừa nhập
+print("Nhập vào số bất kì: ")
+let so = [Int(readLine()!)!]
+let arrChan = so.filter { number in number % 2 == 0 }
+let arrLe = so.filter { number in number % 2 == 1 }
+print("\(so) là số ")
+
+// Bài 6: nhập số nào chạy bài đấy
+print("Nhập vào 1 số từ 1 đến 5: ")
+var number = Int(readLine()!)!
+if number == 1 {
+    print("Bài 1")
+} else {
+    if number == 2 {
+        print("Bài 2")
+    } else {
+        if number == 3 {
+            print("Bài 3")
+        } else {
+            if number == 4 {
+                print("Bài 4")
+            } else {
+                if number == 5 {
+                    print("Bài 5")
+                }
+            }
+        }
+    }
+}
